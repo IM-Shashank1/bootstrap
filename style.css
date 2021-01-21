@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar .navbar-brand{
+  font-weight: normal;
+  font-size: 25px;
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-link{
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  padding: 0;
+  text-transform: uppercase;
+  transition: all-ease-in 0.4s;
+  color: #ffffff;
+}
+.navbar .navbar-nav .nav-link:hover{
+  background: transparent;
+  color: #ffffff;
+}
+.navbar .navbar-nav .nav-link::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: transparent;
+  transition: width 0.3s, background-color 0.3s ease;
+}
+.navbar .navbar-nav .nav-link:hover::after{
+  width: 100%;
+  background: #fff;
+  color: #fff;
+}
+/*--------------------
+HOME
+-------------------*/
+#home {
+  dislpay: flex;
+  align-item: center;
+  height: 100vh;
+  poosition: relative;
+}
+#home video{
+  position: fixed;
+  top: 50%;
+  center: auto;
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  transform: translateX(-20%) translateY(-60%);
+  backgroung-size: cover;
+  object-fit: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: -100;
+  transition:1s opacity;
+  }
+#home .home-text{
+  position: fixed;
+  top:40%;
+  center: auto;
+}
+#home .navbar-toggler-icon{
+  color: #ffffff;
+}
+#home .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  backgrond: rgba(0,0,0,0.75)
+  }
+.swiper-container{
+  width: 100%;
+  height: 100%;
+  }
+.swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
